@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatBiodataActivity">
+
+    <TextView
+        android:id="@+id/text_nomor_1"
+        style="@style/LihatTextHeader"
+        android:text="Nomor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_nomor_2"
+        style="@style/LihatText"
+        app:layout_constraintStart_toStartOf="@id/text_tanggal_2"
+        app:layout_constraintTop_toTopOf="@id/text_nomor_1"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/text_nama_1"
+        style="@style/LihatTextHeader"
+        android:text="Nama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_nomor_1" />
+
+    <TextView
+        android:id="@+id/text_nama_2"
+        style="@style/LihatText"
+        app:layout_constraintStart_toStartOf="@id/text_tanggal_2"
+        app:layout_constraintTop_toTopOf="@id/text_nama_1"
+        tools:text="Ryan Reynolds" />
+
+    <TextView
+        android:id="@+id/text_tanggal_1"
+        style="@style/LihatTextHeader"
+        android:text="Tanggal Lahir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_nama_1" />
+
+    <TextView
+        android:id="@+id/text_tanggal_2"
+        style="@style/LihatTextValue"
+        app:layout_constraintStart_toEndOf="@id/text_tanggal_1"
+        app:layout_constraintTop_toTopOf="@id/text_tanggal_1"
+        tools:text="2000-04-09" />
+
+    <TextView
+        android:id="@+id/text_gender_1"
+        style="@style/LihatTextHeader"
+        android:text="Jenis Kelamin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_tanggal_1" />
+
+    <TextView
+        android:id="@+id/text_gender_2"
+        style="@style/LihatText"
+        app:layout_constraintStart_toStartOf="@id/text_tanggal_2"
+        app:layout_constraintTop_toTopOf="@id/text_gender_1"
+        tools:text="Laki-Laki" />
+
+    <TextView
+        android:id="@+id/text_alamat_1"
+        style="@style/LihatTextHeader"
+        android:text="Alamat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_gender_1" />
+
+    <TextView
+        android:id="@+id/text_alamat_2"
+        style="@style/LihatText"
+        app:layout_constraintStart_toStartOf="@id/text_tanggal_2"
+        app:layout_constraintTop_toTopOf="@id/text_alamat_1"
+        tools:text="California, United States" />
+
+    <Button
+        android:id="@+id/button_return"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kembali"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/text_alamat_1"
+        app:layout_constraintTop_toBottomOf="@id/text_alamat_1" />
+
+</android.support.constraint.ConstraintLayout>
